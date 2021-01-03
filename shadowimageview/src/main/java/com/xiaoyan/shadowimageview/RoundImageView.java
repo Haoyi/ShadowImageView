@@ -28,15 +28,7 @@ import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 
-/**
- * ================================================
- * 作    者：sufly0001@gmail.com
- * 版    本：1.1
- * 创建日期 ：2017/04/01
- * 描    述：
- * 修订历史： 修改显示
- * ================================================
- */
+
 @SuppressLint("AppCompatCustomView")
 public class RoundImageView extends ImageView {
 
