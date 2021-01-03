@@ -1,13 +1,14 @@
-package com.yinglan.shadowdemo;
+package com.xiaoyan.shadowdemo;
 
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.AppCompatSeekBar;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.SeekBar;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatSeekBar;
 
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
@@ -15,11 +16,11 @@ import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.FailReason;
 import com.nostra13.universalimageloader.core.download.BaseImageDownloader;
 import com.nostra13.universalimageloader.core.listener.ImageLoadingListener;
-import com.yinglan.shadowimageview.ShadowImageView;
+import com.xiaoyan.shadowimageview.ShadowImageView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private com.yinglan.shadowimageview.ShadowImageView shadow;
+    private com.xiaoyan.shadowimageview.ShadowImageView shadow;
     private AppCompatSeekBar seekBar;
     private int resId = 1;
 
@@ -109,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
-                ((ShadowImageView)findViewById(R.id.shadowd)).setImageBitmap(loadedImage);
+//                ((ShadowImageView)findViewById(R.id.shadowd)).setImageBitmap(loadedImage);
             }
 
             @Override

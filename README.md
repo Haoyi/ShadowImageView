@@ -23,14 +23,14 @@
 #### Gradle
 ```
 dependencies {
-    compile 'com.yinglan.shadowimageview:shadowimageview:1.0.4'
+    compile 'com.xiaoyan.shadowimageview:shadowimageview:1.0.4'
 }
 ```
 
 ### In layout
 
 ```
-	    <com.yinglan.shadowimageview.ShadowImageView
+	    <com.xiaoyan.shadowimageview.ShadowImageView
 	            android:id="@+id/shadow"
                 android:layout_width="300dp"
                 android:layout_height="300dp"

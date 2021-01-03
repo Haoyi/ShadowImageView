@@ -1,4 +1,4 @@
-package com.yinglan.shadowimageview;
+package com.xiaoyan.shadowimageview;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.yinglan.shadowimageview.test", appContext.getPackageName());
+        assertEquals("com.xiaoyan.shadowimageview.test", appContext.getPackageName());
     }
 }

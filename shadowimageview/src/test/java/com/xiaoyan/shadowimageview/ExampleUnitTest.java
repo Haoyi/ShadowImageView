@@ -1,4 +1,4 @@
-package com.yinglan.shadowdemo;
+package com.xiaoyan.shadowimageview;
 
 import org.junit.Test;
 

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.yinglan.shadowimageview;
+package com.xiaoyan.shadowimageview;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -25,14 +25,16 @@ import android.graphics.RectF;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.ColorInt;
-import android.support.v7.graphics.Palette;
 import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+
+import androidx.annotation.ColorInt;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.palette.graphics.Palette;
 
 /**
  * ================================================
@@ -43,7 +45,7 @@ import android.widget.RelativeLayout;
  * 修订历史： 修改显示
  * ================================================
  */
-public class ShadowImageView extends RelativeLayout {
+public class ShadowImageView extends ConstraintLayout {
 
     private int shadowRound = 0;
     private int shadowColor = -147483648;
@@ -64,7 +66,7 @@ public class ShadowImageView extends RelativeLayout {
 
     private void initView(Context context, AttributeSet attrs) {
         setPadding(80, 40, 80, 120);
-        setGravity(Gravity.CENTER);
+
         setLayerType(LAYER_TYPE_SOFTWARE, null);
 
         int imageresource = -1;
@@ -155,7 +157,7 @@ public class ShadowImageView extends RelativeLayout {
     }
 
     @Override
-    protected void dispatchDraw(Canvas canvas) {
+    public void dispatchDraw(Canvas canvas) {
 
         if (mInvalidat) {
 

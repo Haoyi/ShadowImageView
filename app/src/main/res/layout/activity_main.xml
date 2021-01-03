@@ -4,28 +4,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
+    android:gravity="center"
     android:orientation="vertical">
 
-    <com.yinglan.shadowimageview.ShadowImageView
+    <com.xiaoyan.shadowimageview.ShadowImageView
         android:id="@+id/shadow"
         android:layout_width="300dp"
         android:layout_height="300dp"
         app:shadowRound="0dp"
         app:shadowSrc="@mipmap/android0" />
 
-    <android.support.v7.widget.AppCompatSeekBar
+    <androidx.appcompat.widget.AppCompatSeekBar
         android:id="@+id/seekbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:max="500" />
 
-    <com.yinglan.shadowimageview.ShadowImageView
+<!--    <com.xiaoyan.shadowimageview.ShadowImageView
         android:layout_marginTop="20dp"
         android:id="@+id/shadowd"
         android:layout_width="300dp"
         android:layout_height="150dp"
         app:shadowRound="5dp"
         app:shadowSrc="@mipmap/lotus"
-        app:shadowColor="@color/colorPrimary"/>
+        app:shadowColor="@color/colorPrimary"/>-->
 
 </LinearLayout>
